@@ -22,10 +22,10 @@ class DashboardScreenState extends State<DashboardScreen> {
     return Scaffold(
         appBar: AppBar(
           title: const TitlesTextWidget(label: "Dashboard Screen"),
-          leading: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Image.asset(AssetsManager.shoppingCart),
-          ),
+          // leading: Padding(
+          //   padding: const EdgeInsets.all(8.0),
+          //   child: Image.asset(AssetsManager.shoppingCart),
+          // ),
           actions: [
             IconButton(
               onPressed: () {
