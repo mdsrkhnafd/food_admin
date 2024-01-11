@@ -25,7 +25,7 @@ class DashboardButtonModel {
     ),
 
     DashboardButtonModel(
-      text: "inspect all foods",
+      text: "update all foods",
       imagePath: AssetsManager.shoppingCart,
       onPressed: () {
         Navigator.pushNamed(context, SearchScreen.routeName);

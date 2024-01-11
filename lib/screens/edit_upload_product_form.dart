@@ -123,7 +123,7 @@ class _EditOrUploadProductScreenState extends State<EditOrUploadProductScreen> {
           "createdAt": Timestamp.now(),
         });
         Fluttertoast.showToast(
-          msg: "Product has been added",
+          msg: "Food has been added",
           textColor: Colors.white,
         );
         if (!mounted) return;
@@ -191,7 +191,7 @@ class _EditOrUploadProductScreenState extends State<EditOrUploadProductScreen> {
           "createdAt": widget.productModel!.createdAt,
         });
         Fluttertoast.showToast(
-          msg: "Product has been edited",
+          msg: "Food has been edited",
           textColor: Colors.white,
         );
         if (!mounted) return;
@@ -294,7 +294,7 @@ class _EditOrUploadProductScreenState extends State<EditOrUploadProductScreen> {
                     ),
                     icon: const Icon(Icons.upload),
                     label: Text(
-                      isEditing ? "Edit Product" : "Upload Product",
+                      isEditing ? "Edit Food" : "Upload Food",
                     ),
                     onPressed: () {
                       if (isEditing) {
@@ -311,7 +311,7 @@ class _EditOrUploadProductScreenState extends State<EditOrUploadProductScreen> {
           appBar: AppBar(
             centerTitle: true,
             title: TitlesTextWidget(
-              label: isEditing ? "Edit Product" : "Upload a new product",
+              label: isEditing ? "Edit Food" : "Upload a new Food",
             ),
           ),
           body: SafeArea(
@@ -351,7 +351,7 @@ class _EditOrUploadProductScreenState extends State<EditOrUploadProductScreen> {
                                 onPressed: () {
                                   localImagePicker();
                                 },
-                                child: const Text("pick Product image"))
+                                child: const Text("pick Food image"))
                           ],
                         ),
                       )),
@@ -431,7 +431,7 @@ class _EditOrUploadProductScreenState extends State<EditOrUploadProductScreen> {
                                   keyboardType: TextInputType.multiline,
                                   textInputAction: TextInputAction.newline,
                                   decoration: const InputDecoration(
-                                    hintText: 'Product Title',
+                                    hintText: 'Food Title',
                                   ),
                                   validator: (value) {
                                     return MyValidators.uploadProdTexts(
@@ -456,7 +456,7 @@ class _EditOrUploadProductScreenState extends State<EditOrUploadProductScreen> {
                             maxLength: 1000,
                             textCapitalization: TextCapitalization.sentences,
                             decoration: const InputDecoration(
-                              hintText: 'Product description',
+                              hintText: 'Food description',
                             ),
                             validator: (value) {
                               return MyValidators.uploadProdTexts(

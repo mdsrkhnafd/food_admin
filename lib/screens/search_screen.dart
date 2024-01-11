@@ -47,13 +47,13 @@ class _SearchScreenState extends State<SearchScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          leading: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Image.asset(
-              AssetsManager.shoppingCart,
-            ),
-          ),
-          title: TitlesTextWidget(label: passedCategory ?? "Search products"),
+          // leading: Padding(
+          //   padding: const EdgeInsets.all(8.0),
+          //   child: Image.asset(
+          //     AssetsManager.shoppingCart,
+          //   ),
+          // ),
+          title: TitlesTextWidget(label: passedCategory ?? "Search foods"),
         ),
         body: StreamBuilder<List<ProductModel>>(
                 stream: productsProvider.fetchProductsStream(),
